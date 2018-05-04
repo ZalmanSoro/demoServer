@@ -1,6 +1,6 @@
 const express = require('express');
 
-//const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 var app = express();
 
 app.use((req,res,next)=>{
@@ -9,8 +9,7 @@ app.use((req,res,next)=>{
 });
 
 
-//app.use(express.static(__dirname + '/public'));
-app.set('port', (process.env.PORT || 3000));
+
 
 
 app.get('/',(req,res)=>{
@@ -28,6 +27,6 @@ app.get('/bad',(req,res)=>{
     }
     )
 })
-app.listen(app.get('port') ,()=>{
-    console.log('Listening on port '+ app,get('port'));
+app.listen(port ,()=>{
+    console.log('Listening on port '+ port);
 });
