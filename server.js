@@ -14,7 +14,7 @@ app.use((req,res,next)=>{
 
 app.get('/',(req,res)=>{
 
-    res.send('<h1>Welcome to myServer</h1>');
+    res.sendFile('./views/LandingPage.html');
 });
 app.get('/sasy',(req,res)=>{
 
