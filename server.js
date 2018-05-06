@@ -16,6 +16,10 @@ app.get('/',(req,res)=>{
 
     res.send('<h1>Welcome to myServer</h1>');
 });
+app.get('/sasy',(req,res)=>{
+
+    res.send('<h1>Sasy the king</h1>');
+})
 
 app.get('/bad',(req,res)=>{
     res.send({
