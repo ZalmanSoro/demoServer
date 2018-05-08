@@ -8,16 +8,10 @@ app.use((req,res,next)=>{
     next();
 });
 
-
-
-
-
 app.get('/',(req,res)=>{
-
-    res.render('./index.html');
+    res.send("<h1>Hello</h1>")
 });
 app.get('/sasy',(req,res)=>{
-
     res.send('<h1>Sasy the king</h1>');
 })
 
